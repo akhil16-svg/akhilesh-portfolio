@@ -1,16 +1,40 @@
-# React + Vite
+# Akhilesh Pingle — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Akhilesh Pingle, Software Engineer.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** — functional components and hooks
+- **Vite 8** — build tool with HMR
+- **Tailwind CSS v3** — utility-first styling with a custom dark theme
+- **Framer Motion** — scroll-triggered animations and transitions
+- **Lucide React** — icons
 
-## React Compiler
+## Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+```
+
+Production output goes to `dist/`.
+
+## Deployment
+
+The site is deployed via GitHub Pages. The `dist/` folder is the deployable artifact.
+
+## Sections
+
+- **Hero** — availability badge, typewriter effect, CTA buttons
+- **About** — personal summary, terminal card, stat highlights
+- **Projects** — Real Estate Platform, Walmart Sales Forecasting
+- **Skills** — languages, frontend, cloud/devops, tools
+- **Experience** — Software Engineer & Intern at Omatochi
+- **Education** — MS Computer Science (CSUEB), BE Information Technology (SPPU)
+- **Contact** — validated contact form, email, LinkedIn
