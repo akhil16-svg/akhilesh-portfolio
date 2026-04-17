@@ -10,6 +10,10 @@ const phrases = [
   'Cloud & DevOps Practitioner',
 ]
 
+const TYPING_SPEED_MS = 65
+const DELETING_SPEED_MS = 35
+const PAUSE_AFTER_WORD_MS = 2000
+
 function useTyping(phrases) {
   const [display, setDisplay] = useState('')
   const [phraseIdx, setPhraseIdx] = useState(0)
@@ -18,7 +22,7 @@ function useTyping(phrases) {
 
   useEffect(() => {
     const current = phrases[phraseIdx]
-    const delay = deleting ? 35 : charIdx === current.length ? 2000 : 65
+    const delay = deleting ? DELETING_SPEED_MS : charIdx === current.length ? PAUSE_AFTER_WORD_MS : TYPING_SPEED_MS
 
     const t = setTimeout(() => {
       if (!deleting && charIdx < current.length) {
